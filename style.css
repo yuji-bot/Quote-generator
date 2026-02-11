@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.quotebox{
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px 0px;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.btn button{
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background: blue;
+    color: white;
+}
+
+.quotebox h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.quotebox h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: blue;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.quotebox blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.quotebox blockquote::before, .quotebox blockquote::after{
+    content: '"';
+}
+
+.quotebox span{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+
+.quotebox span::before{
+    content: '';
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
